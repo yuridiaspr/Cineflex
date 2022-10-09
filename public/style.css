@@ -1,0 +1,316 @@
+*body{
+  box-sizing: border-box
+}
+
+.header{
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-top: 67px;
+  padding: 55px 0px;
+  color: #293845;
+}
+
+.MovieList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.MovieContainer{
+  width: 145px;
+  height: 209px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5.5px 15px;
+}
+
+.MovieContainer > img {
+  width: 129px;
+  height: 193px;
+}
+
+.ScheduleContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 24px 24px;
+}
+
+.ScheduleContainer > p{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 22px;
+  
+  color: #293845;
+  
+}
+
+.ScheduleContainer > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.ScheduleContainer > div > button {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #FFFFFF;
+
+
+
+  width: 83px;
+  height: 43px;
+
+  margin: 0px 8px 8px 0px;
+
+  background: #E8833A;
+  border-radius: 3px;
+  border: none;
+}
+
+.footer{
+  position: fixed;
+  width: 100vw;
+  height: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: blue;
+  bottom: 0px;
+
+  background: #DFE6ED;
+  border: 1px solid #9EADBA;
+}
+
+.footer > div:nth-child(1){
+  height: 89px;
+  width: 64px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #FFFFFF;
+  margin-left: 10px;
+  margin-right: 14px;
+}
+
+.footer > div:nth-child(1) > img{
+  width: 48px;
+  height: 72px;
+}
+
+.footer > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #293845;
+}
+
+.footer > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer > div:nth-child(2) > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #293845;
+}
+
+
+.Seats{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 21.5px;
+  margin-right: 21.5px;
+}
+
+.Seats > button {
+  width: 26px;
+  height: 26px;
+
+  border-radius: 12px;
+
+  margin: 0px 3.5px 18px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  
+  color: #000000;
+  
+}
+
+.Selected{
+  background: #1AAE9E;
+  border: 1px solid #0E7D71;
+}
+
+.Available{
+  background: #C3CFD9;
+  border: 1px solid #808F9D;
+}
+
+.Unavailable{
+  background:#FBE192;
+  border: 1px solid #F7C52B;
+}
+
+.Subtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 41px;
+}
+
+.Subtitle > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 17px;
+}
+
+.Subtitle > div > p{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.013em;
+  
+  color: #4E5A65;
+
+}
+
+.Subtitle > div:nth-child(1) > button{
+  background: #1AAE9E;
+  border: 1px solid #0E7D71;
+  width: 25px;
+  height: 25px;
+
+  border-radius: 12px;
+}
+
+.Subtitle > div:nth-child(2) > button{
+  background: #C3CFD9;
+  border: 1px solid #808F9D;
+  width: 25px;
+  height: 25px;
+
+  border-radius: 12px;
+}
+
+.Subtitle > div:nth-child(3) > button{
+  background:#FBE192;
+  border: 1px solid #F7C52B;
+  width: 25px;
+  height: 25px;
+
+  border-radius: 12px;
+}
+
+.CustomerForm > form{
+  display: flex;
+  flex-direction: column;
+  
+
+  margin: 0px 24px;
+}
+
+.CustomerForm > form > label{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  
+  color: #293845;
+}
+
+.CustomerForm > form > input{
+  background: #FFFFFF;
+  border: 1px solid #D5D5D5;
+  border-radius: 3px;
+  height: 51px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.CustomerForm > form > div{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.CustomerForm > form > div >button{
+  margin-top: 50px;
+
+  width: 225px;
+  height: 42px;
+
+  background: #E8833A;
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: center;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #FFFFFF;
+
+  border: none;
+}
