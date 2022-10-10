@@ -14,9 +14,9 @@ export default function App() {
       <Cineflex />
       <Routes>
         <Route path="/" element={<Movie />} />
-        <Route path="/sessoes/" element={<MovieTime />} />
-        <Route path="/assentos/" element={<SessionSeats />} />
-        <Route path="/confirmacao" element={<Confirmation />} />
+        <Route path="/sessoes/:idFilme" element={<MovieTime />} />
+        <Route path="/assentos/:idSessao" element={<SessionSeats />} />
+        <Route path="/sucesso" element={<Confirmation />} />
       </Routes>
     </BrowserRouter>
   );
