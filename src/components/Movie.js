@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import loading from "../assets/images/Loading_icon.gif";
 
-function ChooseMovie(movie) {
-  console.log("Choose", movie.title);
-}
-
 export default function Movie() {
   const [MovieList, setMovieList] = useState(null);
 
@@ -25,10 +21,7 @@ export default function Movie() {
         {MovieList !== null ? (
           MovieList.map((movie, i) => (
             <Link to={`/sessoes/${movie.id}`}>
-              <div
-                onClick={() => ChooseMovie(movie)}
-                className="MovieContainer"
-              >
+              <div className="MovieContainer">
                 <img src={movie.posterURL} />
               </div>
             </Link>

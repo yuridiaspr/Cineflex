@@ -14,6 +14,18 @@
   color: #293845;
 }
 
+.headerConfirmation{
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-top: 67px;
+  padding: 55px 90px;
+  color: #247A6B;
+}
+
 .MovieList{
   display: flex;
   flex-wrap: wrap;
@@ -253,8 +265,6 @@
 .CustomerForm > form{
   display: flex;
   flex-direction: column;
-  
-
   margin: 0px 24px;
 }
 
@@ -292,7 +302,7 @@
   margin-bottom: 150px;
 }
 
-.CustomerForm > form > div >button{
+.CustomerFormButton{
   margin-top: 50px;
 
   width: 225px;
@@ -313,8 +323,54 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+  text-decoration: none;
 
   color: #FFFFFF;
 
   border: none;
+}
+
+.CustomerFormButton:visited{
+  text-decoration: none;
+}
+.CustomerFormButton:active{
+  text-decoration: none;
+}
+
+.ConfirmationContainer{
+  margin-left: 28px;
+  margin-bottom: 30px;
+}
+
+.ConfirmationContainer > h1{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  
+  color: #293845;
+}
+
+.ConfirmationContainer > h2{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  color: #293845;
+}
+
+.GoToHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1AAE9E;
 }

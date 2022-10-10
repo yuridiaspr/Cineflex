@@ -1,7 +1,7 @@
-import loading from "../assets/images/Loading_icon.gif";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import loading from "../assets/images/Loading_icon.gif";
 
 export default function MovieTime() {
   const [SchedulesList, setSchedulesList] = useState(null);
@@ -28,7 +28,7 @@ export default function MovieTime() {
                 </p>
                 <div>
                   {Schedule.showtimes.map((Time, ind) => (
-                    <Link to={`assentos/${Time.id}`}>
+                    <Link to={`/assentos/${Time.id}`}>
                       <button>{Time.name}</button>
                     </Link>
                   ))}
